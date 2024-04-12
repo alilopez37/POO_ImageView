@@ -6,6 +6,7 @@ import java.io.FileNotFoundException;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.fxml.FXML;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
@@ -23,6 +24,9 @@ public class HomeController {
 
     @FXML
     private ImageView img;
+    @FXML
+    private ImageView imgView01;
+
 
     @FXML
     private Button btnImagen;
@@ -42,10 +46,19 @@ public class HomeController {
             } catch (FileNotFoundException e) {
                 throw new RuntimeException(e);
             }
-            img.setImage(new Image(image));
+            imgView01.setImage(new Image(image));
         } else {
             System.out.println("No image selected");
         }
+    }
+
+
+    @FXML
+    void onMouseClickedImage(MouseEvent event) {
+        Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
+        alert.setTitle("Confirmation");
+        alert.showAndWait();
+        System.out.println(((ImageView)event.getSource()).getId());
     }
 
     @FXML

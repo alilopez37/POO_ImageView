@@ -6,7 +6,10 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.alilopez.gestionimagen.controllers.HomeController">
    <children>
-      <ImageView fx:id="img" fitHeight="199.0" fitWidth="290.0" layoutX="175.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="img" fitHeight="293.0" fitWidth="453.0" layoutX="94.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
       <Button fx:id="btnImagen" layoutX="220.0" layoutY="357.0" mnemonicParsing="false" onMouseClicked="#onClickedBtn" prefHeight="35.0" prefWidth="200.0" text="Mostrar Imagen" />
+      <ImageView fx:id="imgView01" fitHeight="102.0" fitWidth="136.0" layoutX="14.0" layoutY="14.0" onMouseClicked="#onMouseClickedImage" pickOnBounds="true" preserveRatio="true" />
+      <ImageView id="3" fitHeight="102.0" fitWidth="136.0" layoutX="336.0" layoutY="24.0" onMouseClicked="#onMouseClickedImage" pickOnBounds="true" preserveRatio="true" />
+      <ImageView id="1" fitHeight="102.0" fitWidth="136.0" layoutX="14.0" layoutY="138.0" onMouseClicked="#onMouseClickedImage" pickOnBounds="true" preserveRatio="true" />
    </children>
 </AnchorPane>
